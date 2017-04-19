@@ -1,4 +1,54 @@
+$fontcolor:  rgb(10%, 10%, 10%);
+$backgroundcolor: rgb(98%, 98%, 98%);
+
+
 body {
   font-family: "Roboto", sans-serif;
-  background: darken(white, 0.2);
+  color: $fontcolor;
+  background-color: $backgroundcolor;
+  margin: 50px;
+  flex: display;
+  flex-direction: row;
+}
+
+#video-layout {
+  display: flex;
+  flex-direction: row;
+}
+
+#search-bar {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 10px;
+
+  input {
+    font-size: 1.5em;
+    border-radius: .25em;
+    height: 30px;
+    width: 400px;
+  }
+  img {
+    height: 100px;
+    width: 200px;
+    cursor: pointer;
+  }
+}
+
+
+#video-section {
+  display: flex;
+  flex-direction: column;
+
+  li {
+    list-style: none;
+    cursor: pointer;
+    display: flex;
+    width: 25vw;
+    padding: 10px;
+  }
+  li:hover {
+    background: darken( $backgroundcolor, 10% );
+  }
+
 }
